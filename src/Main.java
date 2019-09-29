@@ -2,7 +2,29 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+	//iki sayiyi toplayan methot
+	public static int topla(int a,int b){
+	return a+b;
+	}
+
+	//iki sayıyı birbirinden çıkartan method
+	public static int cıkar(int a,int b){
+		return a-b;
+	}
+
+	//iki sayıyı çarpan fonksiyon
+	public static int carp(int a,int b){
+		return a*b;
+	}
+
+	//iki sayiyi bölen fonksiyon
+
+	public static double bol(int a,int b) {
+		return a / b;
+	}
+
+	public static void main(String[] args) {
+
 
 		Scanner tarayici=new Scanner(System.in);
 
@@ -12,8 +34,14 @@ public class Main {
 		System.out.println("İkinci sayiyi giriniz: ");
 	    int sayi2=tarayici.nextInt();
 
+		System.out.println("Girmiş olduğunuz sayıların toplamı: "+topla(sayi1,sayi2));
+		System.out.println("Girmiş olduğunuz sayıların farkı: "+cıkar(sayi1,sayi2));
+		System.out.println("Girmiş olduğunuz sayıların çarpımı: "+carp(sayi1,sayi2));
+		System.out.println("Girmiş olduğunuz sayıların bölümü: "+bol(sayi1,sayi2));
+
 		System.out.println("Üçüncü sayiyi giriniz: ");
 	    int sayi3=tarayici.nextInt();
+
 
 
 	    int enBuyuk=sayi1;
